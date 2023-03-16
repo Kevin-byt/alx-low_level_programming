@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <unistd.h>
 /**
  * main - prints a line to the standard output using fput
  * Return: Always returns 1 (Success)
