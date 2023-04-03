@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- *_memcpy - fills the first n bytes
- *@dest: memory filled
- *@src: memory of the constant  byte copied
- *@n: number of bytes to copy
- *
- *Return: the memory after the copy
+ * _memset - fills the first n bytes with a constant byte
+ * @s: the filled address start value
+ * @b: the value used for filling
+ * @n: number of bytes to be filled *
+ * Return: changed array with new value for n bytes
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	int counter = 0;
-	int bytes = n;
 
-	for (; counter < bytes; counter++)
+	for (; n > 0; counter++)
 	{
-		dest[counter] = src[counter];
+		s[counter] = b;
 		n--;
 	}
-	return (dest);
+	return (s);
 }
 
