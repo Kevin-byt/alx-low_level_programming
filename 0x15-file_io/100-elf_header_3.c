@@ -1,3 +1,12 @@
+#include "main.h"
+#include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * print_type - Prints the type of an ELF header.
  * @e_type: The ELF type.
